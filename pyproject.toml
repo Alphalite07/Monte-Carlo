@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monte-carlo"
+version = "1.0.0"
+description = "Monte Carlo: Multi-Scale Bioinformatics Simulation Suite (Biophysics, Systems Biology, Genomics, Phylogenetics)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Anbu S"}
+]
+keywords = ["monte-carlo", "bioinformatics", "mcmc", "gillespie-ssa", "protein-folding", "gibbs-sampling", "phylogenetics"]
+dependencies = [
+    "numpy>=1.22.0",
+    "matplotlib>=3.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+monte-carlo = "cli:main"
+
+[tool.setuptools]
+py-modules = ["monte_carlo", "cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

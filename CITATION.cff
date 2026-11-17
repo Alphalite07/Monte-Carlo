@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use Monte Carlo in your research or coursework, please cite it as below."
+title: "Monte Carlo: A Multi-Scale Monte Carlo Simulation Framework for Bioinformatics"
+version: 1.0.0
+date-released: 2026-11-17
+license: MIT
+authors:
+  - family-names: "Saravanan"
+    given-names: "Anbu"
+keywords:
+  - monte-carlo
+  - bioinformatics
+  - markov-chain-monte-carlo
+  - protein-folding
+  - gillespie-algorithm
+  - gibbs-sampler
+  - phylogenetics
